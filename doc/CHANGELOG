@@ -1,3 +1,11 @@
+3.0.4 (2026-10-21)
+-----------------
+Updated: The INI Config tab of the top menu shows the sliders icon in the admin4 design (Icon=sliders in [Topmenu_noveniniupdate] of menu.ini.append.php). Older admin designs ignore the setting.
+Fixed: The environment name is escaped before it is stored in ezsite_data.
+Added: composer.json (se7enxweb/noveniniupdate); ezinfo.php and extension.xml state the release, the copyright, the license and the website instead of build placeholders, and extension.xml names ezjscore as a dependency.
+Added: The text of the GNU GPL v2 as LICENSE.
+Updated: README.md replaces README.rst: installation with Composer and by hand, settings, the XML file, usage in the administration and on the command line, permissions, known limits and troubleshooting.
+
 3.0.3
 -----------------
 Fixed INI update script doesn't properly define bool constants
