@@ -1,0 +1,52 @@
+{
+    "name": "se7enxweb/noveniniupdate",
+    "description": "Noven INI Update for Exponential: switch INI settings, config.php constants and the cluster configuration between environments (local, dev, preprod, prod) from one XML file, in the administration or on the command line, with a diff and backups.",
+    "type": "ezpublish-legacy-extension",
+    "keywords": [
+        "exponential",
+        "exponential-legacy",
+        "ezpublish-legacy",
+        "extension",
+        "ini",
+        "configuration",
+        "environment",
+        "deployment",
+        "cluster"
+    ],
+    "homepage": "https://github.com/se7enxweb/noveniniupdate",
+    "support": {
+        "issues": "https://github.com/se7enxweb/noveniniupdate/issues",
+        "source": "https://github.com/se7enxweb/noveniniupdate"
+    },
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Jean-Luc Nguyen",
+            "role": "Author"
+        },
+        {
+            "name": "Jérôme Vieilledent",
+            "homepage": "https://github.com/lolautruche",
+            "role": "Author"
+        },
+        {
+            "name": "Noven",
+            "role": "Author"
+        },
+        {
+            "name": "7x",
+            "email": "info@se7enx.com",
+            "homepage": "https://se7enx.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-simplexml": "*",
+        "se7enxweb/exponential-legacy-installer": "*"
+    },
+    "extra": {
+        "ezpublish-legacy-extension-name": "noveniniupdate",
+        "installer-name": "noveniniupdate"
+    }
+}
