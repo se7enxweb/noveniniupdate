@@ -165,11 +165,11 @@ abstract class NovenConfigAbstractUpdater
 		$resultSelect = $db->arrayQuery('SELECT COUNT(*) AS count FROM `ezsite_data` WHERE `name`="'.self::NOVENINIUPDATE_ENV_KEY.'"');
 		if($resultSelect[0]['count'] == 0)
 		{
-			$db->query('INSERT INTO `ezsite_data` (`name`, `value` ) VALUES("'.self::NOVENINIUPDATE_ENV_KEY.'", "'.$env.'")');
+			$db->query('INSERT INTO `ezsite_data` (`name`, `value` ) VALUES("'.self::NOVENINIUPDATE_ENV_KEY.'", "'.$db->escapeString( $env ).'")');
 		}
 		else
 		{
-			$db->query('UPDATE `ezsite_data` SET `value`="'.$env.'" WHERE `name`="'.self::NOVENINIUPDATE_ENV_KEY.'"');
+			$db->query('UPDATE `ezsite_data` SET `value`="'.$db->escapeString( $env ).'" WHERE `name`="'.self::NOVENINIUPDATE_ENV_KEY.'"');
 		}
 	}
 	
