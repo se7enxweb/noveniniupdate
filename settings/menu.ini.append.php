@@ -7,6 +7,9 @@ Part[noveniniupdatenavigationpart]=INI Config
 Tabs[]=noveniniupdate
 
 [Topmenu_noveniniupdate]
+# Icon - the icon the admin4 design draws before the tab's name: a name of design.ini
+#        [AdminDesignSettings] IconList[] (Bootstrap Icons); older admin designs ignore it.
+Icon=sliders
 NavigationPartIdentifier=noveniniupdatenavigationpart
 Name=INI Config
 Tooltip=Edit INI files depending on your environment (ie. prod, preprod...)
